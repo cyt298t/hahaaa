@@ -7,19 +7,19 @@
 ### 中文版：国外服务器使用
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ### 中文版：国内服务器使用
 
 ```bash
-curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ### 英文版：国外服务器使用
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ## 项目简介
@@ -47,14 +47,14 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 ╚══════════════════════════════╝
 1) 开启引导
 2) 定期 Ping 监控
-3) 定期测 IP 质量（默认每天 03:00 ±30分钟）
-4) 定期 YABS 测试（默认每天 04:00 ±30分钟）
-5) 定期 Bench.sh 测试（默认每天 05:00 ±30分钟）
-6) 定期 NodeQuality 检测（默认每 7 天 06:00 ±30分钟 + 同日 22:00 ±30分钟）
+3) 定期测 IP 质量（默认每天 03:00 +30分钟）
+4) 定期 YABS 测试（默认每天 04:00 +30分钟）
+5) 定期 Bench.sh 测试（默认每天 05:00 +30分钟）
+6) 定期 NodeQuality 检测（默认每 7 天 06:00 +30分钟 + 同日 22:00 +30分钟）
 0) 退出
 ```
 
-其中 `±30分钟` 表示脚本会在目标时间后 30 分钟内随机执行，避免所有机器在同一时刻集中跑测试。
+其中 `+30分钟` 表示脚本会从目标时间开始，随机延后 0~30 分钟执行，避免所有机器在同一时刻集中跑测试。
 
 ## 开启引导
 
@@ -100,14 +100,14 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 默认每天：
 
 ```text
-03:00 ±30分钟
+03:00 +30分钟
 ```
 
 子菜单：
 
 ```text
 1) 查看结果
-2) 开启定时（默认每天 03:00 ±30分钟）
+2) 开启定时（默认每天 03:00 +30分钟）
 3) 立即测试一次
 4) 设置
 5) 关闭定时
@@ -119,7 +119,7 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 默认每天：
 
 ```text
-04:00 ±30分钟
+04:00 +30分钟
 ```
 
 开启定时或立即测试前，会检查内存是否达到 1024MB。
@@ -134,7 +134,7 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 
 ```text
 1) 查看结果
-2) 开启定时（默认每天 04:00 ±30分钟）
+2) 开启定时（默认每天 04:00 +30分钟）
 3) 立即测试一次
 4) 设置
 5) 关闭定时
@@ -146,14 +146,14 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 默认每天：
 
 ```text
-05:00 ±30分钟
+05:00 +30分钟
 ```
 
 子菜单：
 
 ```text
 1) 查看结果
-2) 开启定时（默认每天 05:00 ±30分钟）
+2) 开启定时（默认每天 05:00 +30分钟）
 3) 立即测试一次
 4) 设置
 5) 关闭定时
@@ -167,8 +167,8 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 同一天会测试两轮：
 
 ```text
-06:00 ±30分钟
-22:00 ±30分钟
+06:00 +30分钟
+22:00 +30分钟
 ```
 
 NodeQuality 执行命令：
@@ -187,7 +187,7 @@ https://nodequality.com/r/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ```text
 1) 查看结果
-2) 开启定时（默认每 7 天 06:00 ±30分钟 + 同日 22:00 ±30分钟）
+2) 开启定时（默认每 7 天 06:00 +30分钟 + 同日 22:00 +30分钟）
 3) 立即测试一次
 4) 设置
 5) 关闭定时
@@ -211,7 +211,7 @@ https://nodequality.com/r/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 03:00
 ```
 
-因为测试时间带有 `±30分钟`，所以设置为 `03:00` 后，实际运行窗口是：
+因为测试时间带有 `+30分钟`，所以设置为 `03:00` 后，实际运行窗口是：
 
 ```text
 02:30 - 03:30
@@ -240,19 +240,19 @@ A lightweight CLI toolbox for VPS servers. It turns common network quality check
 ### Chinese version: for overseas servers
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ### Chinese version: for mainland China servers
 
 ```bash
-curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ### English version: for overseas servers
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ## Introduction
@@ -280,14 +280,14 @@ The main menu looks roughly like this:
 ╚══════════════════════════════╝
 1) Setup Wizard
 2) Scheduled Ping Monitor
-3) Scheduled IP Quality Test (default daily 03:00 +/-30 minutes)
-4) Scheduled YABS Test (default daily 04:00 +/-30 minutes)
-5) Scheduled Bench.sh Test (default daily 05:00 +/-30 minutes)
-6) Scheduled NodeQuality Test (default every 7 days 06:00 +/-30 minutes + same day 22:00 +/-30 minutes)
+3) Scheduled IP Quality Test (default daily 03:00 +30 minutes)
+4) Scheduled YABS Test (default daily 04:00 +30 minutes)
+5) Scheduled Bench.sh Test (default daily 05:00 +30 minutes)
+6) Scheduled NodeQuality Test (default every 7 days 06:00 +30 minutes + same day 22:00 +30 minutes)
 0) Exit
 ```
 
-`+/-30 minutes` means the task will run randomly within 30 minutes before or after the target time. This helps avoid running tests on many servers at exactly the same moment.
+`+30 minutes` means the task will run randomly with a 0-30 minute delay after the target time. This helps avoid running tests on many servers at exactly the same moment.
 
 ## Setup Wizard
 
@@ -333,14 +333,14 @@ Menu example:
 Default schedule:
 
 ```text
-03:00 +/-30 minutes daily
+03:00 +30 minutes daily
 ```
 
 Submenu:
 
 ```text
 1) View Results
-2) Enable Schedule (default daily 03:00 +/-30 minutes)
+2) Enable Schedule (default daily 03:00 +30 minutes)
 3) Run Once Now
 4) Settings
 5) Disable Schedule
@@ -352,7 +352,7 @@ Submenu:
 Default schedule:
 
 ```text
-04:00 +/-30 minutes daily
+04:00 +30 minutes daily
 ```
 
 Before enabling the schedule or running once manually, the script checks whether physical memory reaches 1024MB.
@@ -367,7 +367,7 @@ Submenu:
 
 ```text
 1) View Results
-2) Enable Schedule (default daily 04:00 +/-30 minutes)
+2) Enable Schedule (default daily 04:00 +30 minutes)
 3) Run Once Now
 4) Settings
 5) Disable Schedule
@@ -379,14 +379,14 @@ Submenu:
 Default schedule:
 
 ```text
-05:00 +/-30 minutes daily
+05:00 +30 minutes daily
 ```
 
 Submenu:
 
 ```text
 1) View Results
-2) Enable Schedule (default daily 05:00 +/-30 minutes)
+2) Enable Schedule (default daily 05:00 +30 minutes)
 3) Run Once Now
 4) Settings
 5) Disable Schedule
@@ -400,8 +400,8 @@ By default, it runs every 7 days, starting from the day you enable it.
 On each test day, it runs twice:
 
 ```text
-06:00 +/-30 minutes
-22:00 +/-30 minutes
+06:00 +30 minutes
+22:00 +30 minutes
 ```
 
 NodeQuality command:
@@ -420,7 +420,7 @@ Submenu:
 
 ```text
 1) View Results
-2) Enable Schedule (default every 7 days 06:00 +/-30 minutes + same day 22:00 +/-30 minutes)
+2) Enable Schedule (default every 7 days 06:00 +30 minutes + same day 22:00 +30 minutes)
 3) Run Once Now
 4) Settings
 5) Disable Schedule
@@ -444,7 +444,7 @@ Do not enter:
 03:00
 ```
 
-Because scheduled tests use `+/-30 minutes`, setting the target time to `03:00` means the actual run window is:
+Because scheduled tests use `+30 minutes`, setting the target time to `03:00` means the actual run window is:
 
 ```text
 02:30 - 03:30
