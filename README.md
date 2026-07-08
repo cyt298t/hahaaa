@@ -19,7 +19,7 @@ curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/cyt298t/bietaixi
 ### 英文版：国外服务器使用
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://raw.githubusercontent.com/cyt298t/bietaixian/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ## 项目简介
@@ -252,7 +252,7 @@ curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/cyt298t/bietaixi
 ### English version: for overseas servers
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cyt298t/hahaaa/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
+curl -fsSL https://raw.githubusercontent.com/cyt298t/bietaixian/main/haha2english.sh -o haha2.sh && chmod +x haha2.sh && ./haha2.sh
 ```
 
 ## Introduction
