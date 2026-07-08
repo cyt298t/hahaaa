@@ -54,7 +54,7 @@ curl -fsSL https://raw.githubusercontent.com/cyt298t/Bietaixian/main/haha2englis
 0) 退出
 ```
 
-其中 `±30分钟` 表示脚本会在目标时间前后 30 分钟内随机执行，避免所有机器在同一时刻集中跑测试。
+其中 `±30分钟` 表示脚本会在目标时间后 30 分钟内随机执行，避免所有机器在同一时刻集中跑测试。
 
 ## 开启引导
 
