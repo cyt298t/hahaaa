@@ -1050,9 +1050,9 @@ menu_ipq_view(){
       1)
         clear
         local j t2
-        # 全部查看：最新的显示在最上面，最早的显示在最底下。
-        # files[] 在生成时已经按 mtime 倒序排列，这里保持 0 -> idx-1 顺序输出。
-        for j in $(seq 0 $((idx-1))); do
+        # 全部查看：最早的显示在最上面，最新的显示在最底下。
+        # files[] 在生成时按 mtime 倒序排列，这里反向输出 idx-1 -> 0。
+        for ((j=idx-1; j>=0; j--)); do
           if [ "${iskeep[$j]}" = "1" ]; then t2=" [永久]"; else t2=""; fi
           echo -e "\n========== $(basename "${files[$j]}" .log)${t2} ==========\n"
           strip_clear "${files[$j]}"
@@ -1205,9 +1205,9 @@ menu_yabs_view(){
       1)
         clear
         local j t2
-        # 全部查看：最新的显示在最上面，最早的显示在最底下。
-        # files[] 在生成时已经按 mtime 倒序排列，这里保持 0 -> idx-1 顺序输出。
-        for j in $(seq 0 $((idx-1))); do
+        # 全部查看：最早的显示在最上面，最新的显示在最底下。
+        # files[] 在生成时按 mtime 倒序排列，这里反向输出 idx-1 -> 0。
+        for ((j=idx-1; j>=0; j--)); do
           if [ "${iskeep[$j]}" = "1" ]; then t2=" [永久]"; else t2=""; fi
           echo -e "
 ========== $(basename "${files[$j]}" .log)${t2} ==========
@@ -1361,9 +1361,9 @@ menu_bench_view(){
       1)
         clear
         local j t2
-        # 全部查看：最新的显示在最上面，最早的显示在最底下。
-        # files[] 在生成时已经按 mtime 倒序排列，这里保持 0 -> idx-1 顺序输出。
-        for j in $(seq 0 $((idx-1))); do
+        # 全部查看：最早的显示在最上面，最新的显示在最底下。
+        # files[] 在生成时按 mtime 倒序排列，这里反向输出 idx-1 -> 0。
+        for ((j=idx-1; j>=0; j--)); do
           if [ "${iskeep[$j]}" = "1" ]; then t2=" [永久]"; else t2=""; fi
           echo -e "\n========== $(basename "${files[$j]}" .log)${t2} =========="
           echo
@@ -1516,7 +1516,9 @@ menu_nq_view(){
       1)
         clear
         local j t2
-        for j in $(seq 0 $((idx-1))); do
+        # 全部查看：最早的显示在最上面，最新的显示在最底下。
+        # files[] 在生成时按 mtime 倒序排列，这里反向输出 idx-1 -> 0。
+        for ((j=idx-1; j>=0; j--)); do
           if [ "${iskeep[$j]}" = "1" ]; then t2=" [永久]"; else t2=""; fi
           echo -e "\n========== $(basename "${files[$j]}" .log)${t2} =========="
           echo
